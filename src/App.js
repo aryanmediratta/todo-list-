@@ -1,19 +1,15 @@
 import React, { Component } from 'react';
-import { Route, Router } from 'react-router-dom'
 import './App.css';
 import 'antd/dist/antd.css';
-import { Row, Col, Typography, Button } from 'antd';
+import { Row, Col, Typography, Popconfirm } from 'antd';
 import SubmitForm from './SubmitForm';
-import uuid from "uuid/v4";
 
 const { Paragraph } = Typography;
 
 export default class ToDoDragDropDemo extends Component {
   
   state = {
-    tasks: [
-      
-    ]
+    tasks: []
   }
 
   componentDidMount(){
@@ -39,13 +35,13 @@ export default class ToDoDragDropDemo extends Component {
       event.preventDefault();
   }
 
-  onDrop = (event, cat) => {
+  onDrop = (event, category) => {
       let taskName = event.dataTransfer.getData("taskName");
 
       let tasksValue = JSON.parse(localStorage.getItem('tasks'))
       tasksValue.filter((task) => {
           if (task.taskName === taskName) {
-              task.type = cat;
+              task.type = category;
           }
           return task;
       });
@@ -72,10 +68,9 @@ export default class ToDoDragDropDemo extends Component {
     this.setState({
       tasks: JSON.parse(localStorage.getItem('tasks'))
     })
-}
-   
+  }
 
-  onDelete = id => {
+  confirmDelete = id => {
     console.log('deleted todo')
     let json = JSON.parse(localStorage['tasks'])
     for (let i = 0; i< json.length; i++){
@@ -108,9 +103,15 @@ export default class ToDoDragDropDemo extends Component {
           className="draggable">
           {task.taskName}
         </Paragraph>
-        <Button onClick = {()=> this.onDelete(task.id)}> x </Button>
+        <Popconfirm
+          title="Are you sure delete this task?"
+          onConfirm={()=> this.confirmDelete(task.id)}
+          okText="Yes"
+          cancelText="No"
+        >
+          <a href="#"> &nbsp; Delete </a>
+        </Popconfirm>   
         </div>
-  
       );
     });
  
