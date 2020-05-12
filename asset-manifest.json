@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/github.io/todo-list-/static/css/main.583eea2d.chunk.css",
+    "main.js": "/github.io/todo-list-/static/js/main.fd858fe1.chunk.js",
+    "main.js.map": "/github.io/todo-list-/static/js/main.fd858fe1.chunk.js.map",
+    "runtime-main.js": "/github.io/todo-list-/static/js/runtime-main.d1d6bce0.js",
+    "runtime-main.js.map": "/github.io/todo-list-/static/js/runtime-main.d1d6bce0.js.map",
+    "static/css/2.35fcc229.chunk.css": "/github.io/todo-list-/static/css/2.35fcc229.chunk.css",
+    "static/js/2.40dc2636.chunk.js": "/github.io/todo-list-/static/js/2.40dc2636.chunk.js",
+    "static/js/2.40dc2636.chunk.js.map": "/github.io/todo-list-/static/js/2.40dc2636.chunk.js.map",
+    "index.html": "/github.io/todo-list-/index.html",
+    "precache-manifest.baea8b751cbdfac2dc745addcf241380.js": "/github.io/todo-list-/precache-manifest.baea8b751cbdfac2dc745addcf241380.js",
+    "service-worker.js": "/github.io/todo-list-/service-worker.js",
+    "static/css/2.35fcc229.chunk.css.map": "/github.io/todo-list-/static/css/2.35fcc229.chunk.css.map",
+    "static/css/main.583eea2d.chunk.css.map": "/github.io/todo-list-/static/css/main.583eea2d.chunk.css.map",
+    "static/js/2.40dc2636.chunk.js.LICENSE.txt": "/github.io/todo-list-/static/js/2.40dc2636.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d1d6bce0.js",
+    "static/css/2.35fcc229.chunk.css",
+    "static/js/2.40dc2636.chunk.js",
+    "static/css/main.583eea2d.chunk.css",
+    "static/js/main.fd858fe1.chunk.js"
+  ]
+}
